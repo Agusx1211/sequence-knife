@@ -1,6 +1,6 @@
 # Sequence-Knife
 
-Sequence-Knife is a command-line interface (CLI) tool designed to help debug and analyze Sequence Smart Wallet configurations and signatures.
+Sequence-Knife is a command-line interface tool designed to help debug and analyze Sequence Smart Wallet configurations and signatures.
 
 ## Features
 
@@ -8,6 +8,23 @@ Sequence-Knife is a command-line interface (CLI) tool designed to help debug and
 - Find subdigest combinations for signature verification
 - Command-line interface for easy integration into scripts and workflows
 - Lightweight and fast, built with Bun
+
+```
+sequence-knife <command>
+
+Commands:
+  sequence-knife initialImageHash <walletA  Obtain the initial image hash of a w
+  ddress>                                   allet
+  sequence-knife deployCalldata <walletAdd  Code to deploy a wallet
+  ress>
+  sequence-knife decode <signature>         Decode a signature
+  sequence-knife subdigestFinder            Find combinations of parameters that
+                                             match a known subdigest
+  sequence-knife subdigest                  Calculate a subdigest for given chai
+                                            nId, address and digest
+  sequence-knife config <imageHash>         Get configuration for a given imageH
+                                            ash
+```
 
 ## Prerequisites
 
