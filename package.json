@@ -1,0 +1,26 @@
+{
+  "name": "sequence-knife",
+  "module": "src/index.ts",
+  "type": "module",
+  "bin": {
+    "sequence-knife": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/yargs": "^17.0.33"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@0xsequence/abi": "^2.1.3",
+    "@0xsequence/core": "^2.1.3",
+    "@0xsequence/sessions": "^2.1.3",
+    "@0xsequence/signhub": "^2.1.3",
+    "ethers": "^6.13.4",
+    "yargs": "^17.7.2"
+  },
+  "scripts": {
+    "start": "bun src/index.ts"
+  }
+}
